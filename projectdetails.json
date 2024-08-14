@@ -1,0 +1,20 @@
+[
+    {
+      "projectname": "Animation Project",
+      "softwareused" : "Blender",
+      "projectyear":2020
+      
+    },
+    {
+        "projectname": "Level Design Project",
+        "softwareused" : "Unity 3D",
+        "projectyear":2020
+        
+      },
+      {
+        "projectname": "Bubble Squad",
+        "softwareused" : "Unity 3D",
+        "projectyear":2020
+        
+      }
+  ]

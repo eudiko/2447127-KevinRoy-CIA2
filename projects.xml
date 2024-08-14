@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="projects.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<Projects xmlns="www.kevin.com/project">
+    <project id="C1">
+        <project-id>1</project-id>
+        <project-name>Animation Project</project-name>
+        <software-used>Blender</software-used>
+    </project>
+    <project id="C1">
+        <project-id>2</project-id>
+        <project-name>Level Design Project</project-name>
+        <software-used>Unity 3D</software-used>
+    </project>
+    <project id="C1">
+        <project-id>3</project-id>
+        <project-name>Bubble Squad-Game Jam</project-name>
+        <software-used>Unity 3D</software-used>
+    </project>
+</Projects>

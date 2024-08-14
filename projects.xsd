@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="www.kevin.com/project" 
+           xmlns:cre="www.kevin.com/project" 
+           elementFormDefault="qualified">
+
+    <xs:element name="Projects" type="cre:ProjectsType"/>
+    
+    <xs:complexType name="ProjectsType">
+        <xs:sequence>
+            <xs:element name="project" type="cre:projectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="projectType">
+        <xs:sequence>
+            <xs:element name="project-id" type="cre:positiveid"/>
+            <xs:element name="project-name" type="xs:string"/>
+            <xs:element name="software-used" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="projectsType">
+        <xs:sequence>
+            <xs:element name="project" type="cre:projectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="positiveid">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="projectNameType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
